@@ -33,3 +33,12 @@ array = np.array([1, 2, 3])
 print(array + 5)  # [6 7 8]
 print(array * 2)  # [2 4 6]
 print(array / 4)  # [0.25 0.5 0.75]
+
+# Vectorize math functions
+
+array = np.array([12, -25, 31])
+absol_array = np.array(np.absolute(array))  # array([12, 25, 31])
+sqrt_array = np.array(np.sqrt(absol_array))  # array([3.46410162, 5.   , 5.56776436])
+round_array = np.array(np.round(sqrt_array))  # array([3., 5., 6.])
+round_down_array = np.array(np.floor(sqrt_array))  # array([3., 5., 5.])
+round_up_array = np.array(np.ceil(sqrt_array))  # array([4., 5., 6.])
