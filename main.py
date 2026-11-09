@@ -42,3 +42,13 @@ sqrt_array = np.array(np.sqrt(absol_array))  # array([3.46410162, 5.   , 5.56776
 round_array = np.array(np.round(sqrt_array))  # array([3., 5., 6.])
 round_down_array = np.array(np.floor(sqrt_array))  # array([3., 5., 5.])
 round_up_array = np.array(np.ceil(sqrt_array))  # array([4., 5., 6.])
+
+# Exercise
+
+radius = np.array([1, 2, 3])
+circle_area = np.pi * (radius**2)
+
+for i in range(len(radius)):
+    print(
+        f"the area of a circle with where radius is {radius[i]} is equall to {circle_area[i]} "
+    )
