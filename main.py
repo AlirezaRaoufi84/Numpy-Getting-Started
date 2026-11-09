@@ -73,4 +73,14 @@ for i in range(len(pass_score)):
       print(f'You passed with {scores[i]}')
    else:
       print(f'You didn`t pass with {scores[i]}')
-      
+
+'''
+You passed with 12.0
+You didn`t pass with 3.0
+You passed with 20.0
+You passed with 15.0
+You passed with 13.5
+You didn`t pass with 9.75
+You passed with 10.0
+You didn`t pass with 2.5
+'''
