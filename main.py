@@ -63,3 +63,14 @@ array2 = np.array([4, 5, 6])
  print(array * array2) # [4 10 18]
  print(array / array2) # [0.25 0.4 0.5]
  print(array ** array2) # [1 32 729]
+
+# Comparison operator + Exercise
+
+scores = np.array([12,3,20,15,13.5,9.75,10,2.5])
+pass_score = scores >= 10
+for i in range(len(pass_score)):
+   if pass_score[i] == True:
+      print(f'You passed with {scores[i]}')
+   else:
+      print(f'You didn`t pass with {scores[i]}')
+      
