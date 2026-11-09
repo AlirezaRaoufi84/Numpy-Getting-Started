@@ -25,3 +25,11 @@ print(array[:2, 2:])
 
 print(array[:, ::2])  # only odd numbers show up
 print(array[:, 1::2])  # only evens numbers show up
+
+# Scalar arithmetic
+
+array = np.array([1, 2, 3])
+
+print(array + 5)  # [6 7 8]
+print(array * 2)  # [2 4 6]
+print(array / 4)  # [0.25 0.5 0.75]
