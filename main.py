@@ -127,3 +127,24 @@ odds = ages[ages % 2 == 1] # [21, 19, 15, 23, 43, 39, 17, 19, 25]
 
 new_adults = np.where( (18 <= ages) & (ages <= 25)  , ages , -1) 
 # [[21, 19, -1, 23, 20, 18, -1, -1],[-1, -1, 22, -1, 19, 20, 24, 25]]
+
+# random number generator + exercise
+rng = np.random.default_rng(seed=1)
+
+print(rng.integers(low=1,high=7,size=(3,2))) # random dice number 3 turns 2 players 
+''' my example :
+[[3 4] player 1 = 3, player 2 = 4
+ [5 6] player 1 = 5, player 2 = 6
+ [1 1]] player 1 = 1, player 2 = 1
+ '''
+np.random.seed(seed=1)
+rng_range = np.random.uniform(low=-1,high=1) # -0.165955990594852
+
+array = np.array([1,2,3,4,5])
+rng.shuffle(array) # [4, 1, 2, 5, 3]
+fruits = np.array(['apple','banana','orange','kiwi','pineapple'])
+rand_fruit = rng.choice(fruits , size=(2,3)) 
+''' 
+[['apple', 'apple', 'pineapple'], 
+['kiwi', 'pineapple', 'orange']]  => random choises
+'''
