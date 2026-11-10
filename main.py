@@ -102,3 +102,15 @@ muti_table = array1 * array2
        [  9,  18,  27,  36,  45,  54,  63,  72,  81,  90],
        [ 10,  20,  30,  40,  50,  60,  70,  80,  90, 100]])'''
 
+# Aggregate functions
+ 
+array = np.array([[1,2,3,4,5],[6,7,8,9,10]])
+print(np.sum(array)) #55
+print(np.min(array)) #1
+print(np.max(array)) #10
+print(np.mean(array)) #5.5
+print(np.argmin(array)) # 0 
+print(np.argmax(array)) # 9 
+
+print(np.sum(array, axis = 0)) # [ 7  9 11 13 15]
+print(np.sum(array, axis = 1)) # [15 40]
