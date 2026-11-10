@@ -114,3 +114,16 @@ print(np.argmax(array)) # 9
 
 print(np.sum(array, axis = 0)) # [ 7  9 11 13 15]
 print(np.sum(array, axis = 1)) # [15 40]
+
+# Filtering
+ages = np.array([[21,19,15,23,20,18,16,43],
+                 [39,28,22,17,19,20,24,25]])
+ages.shape
+teenages = ages[ages < 18] #[15, 16, 17]
+adults = ages[(18 <= ages) & (ages <= 25)] # [21, 19, 23, 20, 18, 22, 19, 20, 24, 25]
+not_in_collage = ages[(18 > ages) | (ages > 25)] # [15, 16, 43, 39, 28, 17]
+evens = ages[ages % 2 == 0] # [20, 18, 16, 28, 22, 20, 24]
+odds = ages[ages % 2 == 1] # [21, 19, 15, 23, 43, 39, 17, 19, 25]
+
+new_adults = np.where( (18 <= ages) & (ages <= 25)  , ages , -1) 
+# [[21, 19, -1, 23, 20, 18, -1, -1],[-1, -1, 22, -1, 19, 20, 24, 25]]
